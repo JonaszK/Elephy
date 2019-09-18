@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <title>Elephy - kursy online dla każdego</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/65d40bc64e.js"></script>
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+
+    <nav class="navbar" id="nav">
+      <div class="navbar__brand">
+        <div class="navbar__brand-image-box">
+          <img src="img/logo.png" alt="" class="navbar__brand-image">
+        </div>
+        <div class="navbar__brand-text">
+          Elephy
+        </div>
+      </div>
+
+      <div class="search-box__wrapper">
+        <input class="search-box__input" type="text" placeholder="Wyszukaj..">
+        <button class="search-box__button">&#128269;</button>
+      </div>
+
+      <div class="nav__links">
+
+        <div class="projects">
+          <a class="projects__dropdown" href="">Moje kursy</a>
+          <div class="dropdown"></div>
+        </div>
+
+        <div class="projects">
+          <a class="projects__dropdown" href="">Powiadomienia</a>
+          <div class="dropdown"></div>
+        </div>
+
+        <div class="projects">
+          <a class="btn btn__login" href="">Zarejestruj się</a>
+        </div>
+
+      </div>
+
+      <div class="nav-mobile__burger">
+          <a class="nav-mobile__link" href="">Moje kursy</a>
+          <a class="nav-mobile__link" href="">Powiadomienia</a>
+          <a class="nav-mobile__link" href="">Zarejestruj się</a>
+      </div>
+
+    </nav>
+
+    <div id="navbarStick"></div>
+
+    <header class="hero">
+      <div class="hero__text-box">
+        <h1 class="hero__header">
+          Elephy
+        </h1>
+        <h2 class="hero__text">
+          Zdobądź wiedzę z nami
+        </h2>
+      </div>
+    </header>
+
+    <section class="section-functions">
+      <h2 class="section-functions__heading">
+        Na naszej stronie oferujemy
+      </h2>
+      <div class="row">
+        <div class="col-1-3 functions__card">
+          <div class="card">
+            <div class="card__icon-box">
+              <i class="far fa-clock card__icon"></i>
+            </div>
+            <h2 class="card__heading">
+              7 dni do zwrotu
+            </h2>
+            <p class="card__text">
+              Jeżeli zakupiony kurs Ci się nie spodoba masz 7 dni na zwrócenie go i otrzymanie pieniędzy z powrotem bez żadnych dodatkowych kosztów!
+            </p>
+          </div>
+        </div>
+        <div class="col-1-3 functions__card">
+          <div class="card">
+            <div class="card__icon-box">
+              <i class="fas fa-check card__icon"></i>
+            </div>
+            <h2 class="card__heading">
+              Zweryfikowane kursy
+            </h2>
+            <p class="card__text">
+              Na Elephy.pl publikujemy jedynie zweryfikowane przez nasz zespół kursy, które sprostają Twoim oczekiwaniom.
+            </p>
+          </div>
+        </div>
+        <div class="col-1-3 functions__card">
+          <div class="card">
+            <div class="card__icon-box">
+              <i class="fas fa-infinity card__icon"></i>
+            </div>
+            <h2 class="card__heading">
+              Dostęp bez limitu
+            </h2>
+            <p class="card__text">
+              Korzystaj kiedy chcesz i jak chcesz! Twoje kursy będą dla Ciebie dostępne w każdej chwili i nigdy nie wygasną.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-courses">
+      <h2 class="section-courses__heading">
+        Wybierz kurs dla siebie:
+      </h2>
+      <div class="row-courses">
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course1.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course2.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course3.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course4.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course5.png" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course6.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-courses">
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course1.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course2.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course3.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course4.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course5.png" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-5">
+          <div class="course-card">
+            <div class="course-card__image-box">
+              <img class="course-card__image" src="img/course6.jpg" alt="">
+            </div>
+            <div class="course-card__content-box">
+              <h3 class="course-card__title">
+                WebDevelopment od zera
+              </h3>
+              <p class="course-card__author">
+                Arkadiusz Derny
+              </p>
+              <div class="course-card__price-stars">
+                <div class="course-card__stars-box">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="course-card__price">
+                  39,99zł
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-footer.png" alt="" class="footer__logo">
+      </div>
+      <div class="footer__content">
+        <div class="footer__links">
+          <a href="" class="footer__link">O nas</a>
+          <a href="" class="footer__link">Pomoc i informacje</a>
+          <a href="" class="footer__link">Jak zostać instruktorem</a>
+          <a href="" class="footer__link">Polityka prywatności</a>
+          <a href="" class="footer__link">Warunki użytkowania</a>
+          <a href="" class="footer__link">O nas</a>
+          <a href="" class="footer__link">Pomoc i informacje</a>
+          <a href="" class="footer__link">Jak zostać instruktorem</a>
+          <a href="" class="footer__link">Polityka prywatności</a>
+          <a href="" class="footer__link">Warunki użytkowania</a>
+        </div>
+        <div class="footer__about-box">
+          <p class="footer__about">
+            <span class="footer__about-link">Elephy</span> jest stroną stworzoną z myślą o prostym i ogólnodostępnym zdobywaniu wiedzy. Kursy, które u nas się pojawiają są weryfikowane przez nasz zespół,
+            aby dostarczyć Ci materiały o wysokiej jakości. Są one dostępne z każdego miejsca i przez cały czas, więc nie musisz się martwić zakupieniem kursu w momencie urlopu,
+            przerwy. Staramy się utrzymać naszą stronę intuicyjną i przyjemną w użytkowaniu. Masz jakieś propozycje? - napisz do nas <span class="footer__about-link">kursy@elephy.pl</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+      <script type="text/javascript">
+
+        window.onscroll = function() {giveClass()};
+
+        var nav = document.getElementById("nav");
+        var x = document.getElementById("navbarStick");
+        var offset = x.offsetTop;
+
+        var els= document.getElementsByClassName("course-card__image");
+        var width = els[0].offsetWidth;
+
+        // courses thumbnail size
+
+        Array.prototype.forEach.call(els, function(el) {
+          el.style.height = width * 0.5625 + "px";
+        });
+
+        window.onresize = resize;
+
+        function resize() {
+          Array.prototype.forEach.call(els, function(el) {
+            var width = els[0].offsetWidth;
+            el.style.height = width * 0.5625 + "px";
+          });
+        }
+
+        // detect navbar
+
+        function giveClass() {
+          if (window.pageYOffset > offset) {
+            nav.classList.add("navbar-fixed");
+            x.style.marginTop = "69px";
+          }
+        }
+      </script>
+  </body>
+</html>
