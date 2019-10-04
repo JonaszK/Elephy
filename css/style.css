@@ -638,8 +638,11 @@ li, a, button, .navbar__brand-text {
 
 @media only screen and (max-width: 500px) {
   .row {
-    grid-template-columns: repeat(1, 250px);
-    grid-template-rows: 300px;
+    grid-template-columns: repeat(1, 290px);
+    grid-template-rows: 330px;
+  }
+  .functions__card:last-of-type {
+    margin-bottom: 30px;
   }
 }
 
