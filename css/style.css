@@ -23,8 +23,8 @@ body {
 
 .guarantee {
   height: 50px;
-  /* background-image: linear-gradient(to right, #6791cf, #3ca7da, #08bad8, #30cbcc, #68d9b9); */
-  background-color: #68d9b9;
+  background-image: linear-gradient(to right, #6791cf, #3ca7da, #08bad8, #30cbcc, #68d9b9);
+  /* background-color: #68d9b9; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,14 +100,19 @@ li, a, button, .navbar__brand-text {
   transition: all 0.3s ease 0s;
 }
 
-.nav-mobile__burger {
+.nav-mobile__burger, .mobile-nav {
   display: none;
 }
 
-.nav-mobile__link {
+.line1, .line2, .line3 {
   width: 25px;
-  height: 5px;
+  height: 3px;
+  background-color: grey;
+  margin: 5px;
+  border-radius: 3px;
 }
+
+
 
 /* searchbox */
 
@@ -280,6 +285,17 @@ li, a, button, .navbar__brand-text {
   margin-left: 10px;
 }
 
+@media only screen and (max-width: 1100px) {
+  .nav__right {
+    display: none;
+  }
+
+  .nav-mobile__burger {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
 /********/
 /* HERO */
 /********/
@@ -292,6 +308,14 @@ li, a, button, .navbar__brand-text {
   background-position:  100% 93%;
   height: 70vh;
   position: relative;
+  z-index: -10;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero {
+    margin-top: -20px;
+    height: 50vh;
+  }
 }
 
 .div {
@@ -647,6 +671,10 @@ li, a, button, .navbar__brand-text {
   .functions__card:last-of-type {
     margin-bottom: 30px;
   }
+  .section-functions__heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 /* ****** */
@@ -660,16 +688,6 @@ li, a, button, .navbar__brand-text {
 }
 
 /* media for courses card */
-
-@media only screen and (max-width: 400px) {
-  .row-courses {
-    grid-template-columns: repeat(2, 200px);
-  }
-
-  .course-card__title {
-    font-size: 18px;
-  }
-}
 
 .row-courses:not(:last-of-type) {
   margin-bottom: 50px;
@@ -695,7 +713,25 @@ li, a, button, .navbar__brand-text {
 
 @media only screen and (max-width: 860px) {
   .row-courses {
-    grid-template-columns: repeat(2, 230px);
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .row-courses {
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .row-courses {
+    grid-template-columns: repeat(2, 220px);
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .row-courses {
+    grid-template-columns: repeat(2, 180px);
   }
 }
 
