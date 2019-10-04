@@ -386,16 +386,16 @@ li, a, button, .navbar__brand-text {
   font-size: 16px;
 }
 
-.card:hover {
+/* .card:hover {
   cursor: pointer;
   background-color: white;
   transform: translateY(-3px);
-  box-shadow: 0px 7px 13px rgba(104, 217, 185, 0.6)
+  box-shadow: 0px 7px 13px rgba(104, 217, 185, 0.6);
 }
 
 .card:hover .card__icon {
   color: #68d9b9;
-}
+} */
 
 @media only screen and (max-width: 1100px) {
   .card__heading {
@@ -408,6 +408,33 @@ li, a, button, .navbar__brand-text {
 
   .card__text {
     font-size: 14px;
+  }
+
+  .section-functions__heading {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card__heading {
+    font-size: 35px;
+  }
+
+  .functions__card::after {
+    content: " ";
+    display: block;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    margin-bottom: 3px solid grey;
+  }
+
+  .card__icon {
+    font-size: 70px;
+  }
+
+  .card__text {
+    font-size: 16px;
   }
 }
 
@@ -573,7 +600,9 @@ li, a, button, .navbar__brand-text {
 /* classes */
 /***********/
 
-/* GREED */
+/* ****** */
+/* GRID FOR FUNCTIONS CARDS */
+/* ****** */
 
 .row {
   display: grid;
@@ -581,6 +610,8 @@ li, a, button, .navbar__brand-text {
   justify-content: center;
   grid-gap: 150px;
 }
+
+/* media for functions card grid */
 
 @media only screen and (max-width: 1400px) {
   .row {
@@ -598,11 +629,24 @@ li, a, button, .navbar__brand-text {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .row {
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: 270px;
+  }
+}
+
+/* ****** */
+/* GRID FOR COURSES */
+/* ****** */
+
 .row-courses {
   display: grid;
   grid-template-columns: repeat(6, 230px);
   grid-gap: 25px;
 }
+
+/* media for courses card */
 
 @media only screen and (max-width: 400px) {
   .row-courses {
@@ -671,6 +715,17 @@ li, a, button, .navbar__brand-text {
 
 .margin--right-big {
   margin-right: 70px;
+}
+
+.functions__on-click {
+  transition: all ease .2s;
+  background-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0px 7px 13px rgba(104, 217, 185, 0.6);
+}
+
+.functions__on-click .card__icon {
+  color: #68d9b9;
 }
 
 @media only screen and (max-width: 1300px) {
