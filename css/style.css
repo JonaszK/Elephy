@@ -641,6 +641,9 @@ li, a, button, .navbar__brand-text {
     grid-template-columns: repeat(1, 290px);
     grid-template-rows: 330px;
   }
+  .functions__card {
+    border-radius: 5px;
+  }
   .functions__card:last-of-type {
     margin-bottom: 30px;
   }
