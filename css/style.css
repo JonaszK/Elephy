@@ -194,6 +194,10 @@ li, a, button, .navbar__brand-text {
   color: #68d9b9;
 }
 
+.hero__search-box__wrapper {
+  display: none;
+}
+
 /* DROPDOWNS */
 
 .projects {
@@ -322,7 +326,7 @@ li, a, button, .navbar__brand-text {
 
 @media only screen and (max-width: 900px) {
   .search-box__wrapper {
-    display: none;
+
   }
 }
 
@@ -407,13 +411,6 @@ li, a, button, .navbar__brand-text {
   z-index: -10;
 }
 
-@media only screen and (max-width: 1100px) {
-  .hero {
-    margin-top: -20px;
-    height: 50vh;
-  }
-}
-
 .div {
   height: 1000px;
 }
@@ -435,6 +432,7 @@ li, a, button, .navbar__brand-text {
   letter-spacing: 7px;
   margin-bottom: 15px;
   font-weight: normal;
+  text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .hero__header::before {
@@ -451,6 +449,54 @@ li, a, button, .navbar__brand-text {
   font-size: 22px;
   letter-spacing: 4.5px;
   font-weight: normal;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero {
+    margin-top: -20px;
+  }
+
+  .hero__header {
+    font-size: 95px;
+  }
+
+  .hero__text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero__search-box__wrapper {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero__text-box {
+    text-align: left;
+    left: 10%;
+    top: 25%;
+    transform: translate(0%, 0%);
+  }
+
+  .hero__header::before {
+    display: none;
+  }
+
+  .hero__header {
+    font-size: 90px;
+    letter-spacing: 0;
+    margin: 0 0 0 -8px;
+  }
+
+  .hero__text {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
 }
 
 /*********************/
@@ -631,6 +677,9 @@ li, a, button, .navbar__brand-text {
   margin-top: 7px;
   font-weight: normal;
   font-size: 20px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .course-card__author {
@@ -787,7 +836,7 @@ li, a, button, .navbar__brand-text {
   .row {
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: 130px;
-    grid-gap: 20px;
+    grid-gap: 5px;
   }
   .functions__card {
     border-radius: 5px;
@@ -797,7 +846,6 @@ li, a, button, .navbar__brand-text {
 @media only screen and (max-width: 400px) {
   .row {
     grid-template-columns: repeat(3, 120px);
-    grid-gap: 5px;
   }
 }
 
@@ -855,7 +903,7 @@ li, a, button, .navbar__brand-text {
 
 @media only screen and (max-width: 560px) {
   .row-courses {
-    grid-template-columns: repeat(2, 180px);
+    grid-template-columns: repeat(2, 190px);
   }
 }
 
