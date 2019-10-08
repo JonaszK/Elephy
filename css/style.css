@@ -479,7 +479,7 @@ li, a, button, .navbar__brand-text {
 @media only screen and (max-width: 900px) {
   .hero__search-box__wrapper {
     display: inline-flex;
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
   }
 
