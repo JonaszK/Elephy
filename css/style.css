@@ -575,6 +575,16 @@ li, a, button, .navbar__brand-text {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .card__icon {
+    font-size: 30px;
+  }
+
+  .card__heading {
+    font-size: 16px;
+  }
+}
+
 /*******************/
 /* SECTION-COURSES */
 /*******************/
@@ -782,8 +792,12 @@ li, a, button, .navbar__brand-text {
   .functions__card {
     border-radius: 5px;
   }
-  .functions__card:last-of-type {
-    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+  .row {
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 5px;
   }
 }
 
