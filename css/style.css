@@ -147,10 +147,10 @@ li, a, button, .navbar__brand-text {
 .search-box__button {
   border-radius: 0 4px 4px 0;
   border: 2px solid #68d9b9;
+  border-left: none;
   background-color: transparent;
   padding: 0 0.75em;
   color: #68d9b9;
-  border-left: none;
   transition: 0.15s ease;
   outline: none;
 }
@@ -325,8 +325,19 @@ li, a, button, .navbar__brand-text {
 }
 
 @media only screen and (max-width: 900px) {
-  .search-box__wrapper {
+  .search-box__button {
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #68d9b9;
+    border-left: none;
+  }
+  .search-box__input {
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #68d9b9;
+    border-right: none;
+  }
 
+  .search-box__wrapper {
+    width: 50%;
   }
 }
 
@@ -495,7 +506,27 @@ li, a, button, .navbar__brand-text {
 
   .hero__text {
     font-size: 18px;
-    letter-spacing: 0;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    height: 45vh;
+  }
+
+  .hero__header {
+    font-size: 70px;
+  }
+
+  .hero__text {
+    font-size: 16px;
   }
 }
 
@@ -719,6 +750,31 @@ li, a, button, .navbar__brand-text {
   color: #68d9b9;
 }
 
+@media only screen and (max-width: 800px) {
+  .section-courses__heading {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-courses__heading {
+    font-size: 25px;
+    border-left: 5px solid #68d9b9;
+  }
+
+  .course-card__title {
+    font-size: 16px;
+  }
+
+  .course-card__author {
+    font-size: 14px;
+  }
+
+  .course-card__price-stars {
+    font-size: 14px;
+  }
+}
+
 /**********/
 /* FOOTER */
 /**********/
@@ -907,6 +963,13 @@ li, a, button, .navbar__brand-text {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .row-courses {
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 170px);
+  }
+}
+
 .btn {
   text-decoration: none;
   padding: 10px 15px;
@@ -922,31 +985,12 @@ li, a, button, .navbar__brand-text {
   border: 1px solid #68d9b9;
 }
 
-.btn__login {
-
-}
-
-.test {
-  height: 1000px;
-}
-
 .margin--right {
   margin-right: 7px;
 }
 
 .margin--right-big {
   margin-right: 70px;
-}
-
-.functions__on-click {
-  transition: all ease .2s;
-  background-color: white;
-  transform: translateY(-3px);
-  box-shadow: 0px 7px 13px rgba(104, 217, 185, 0.6);
-}
-
-.functions__on-click .card__icon {
-  color: #68d9b9;
 }
 
 @media only screen and (max-width: 1300px) {
