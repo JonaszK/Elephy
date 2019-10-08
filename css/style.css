@@ -775,6 +775,20 @@ li, a, button, .navbar__brand-text {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .course-card__title {
+    font-size: 14px;
+  }
+
+  .course-card__author {
+    font-size: 12px;
+  }
+
+  .course-card__price-stars {
+    font-size: 12px;
+  }
+}
+
 /**********/
 /* FOOTER */
 /**********/
@@ -966,7 +980,7 @@ li, a, button, .navbar__brand-text {
 @media only screen and (max-width: 500px) {
   .row-courses {
     grid-gap: 10px;
-    grid-template-columns: repeat(2, 170px);
+    grid-template-columns: repeat(2, 150px);
   }
 }
 
