@@ -339,6 +339,10 @@ li, a, button, .navbar__brand-text {
   .search-box__wrapper {
     width: 50%;
   }
+
+  .nav-mobile {
+    width: 50%;
+  }
 }
 
 /* navbar mobile content styles */
@@ -753,6 +757,10 @@ li, a, button, .navbar__brand-text {
 @media only screen and (max-width: 800px) {
   .section-courses__heading {
     font-size: 35px;
+  }
+
+  .section-courses {
+    padding: 2% 4%;
   }
 }
 
