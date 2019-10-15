@@ -15,7 +15,7 @@ body {
 }
 
 ::placeholder {
-  color: grey;
+  color: lightgrey;
 }
 /**************/
 /* NAVIGATION */
@@ -134,7 +134,7 @@ li, a, button, .navbar__brand-text {
 }
 
 .search-box__input:focus {
-  background-color: #ededed;
+  background-color: #f5f5f5;
 }
 
 .search-box__input {
@@ -145,6 +145,7 @@ li, a, button, .navbar__brand-text {
   width: 100%;
   color: grey;
   background-color: #fafafa;
+  transition: .4s;
 }
 
 .search-box__input:focus {
@@ -570,7 +571,7 @@ li, a, button, .navbar__brand-text {
 
 @media only screen and (max-width: 500px) {
   .hero {
-    height: 45vh;
+    height: 250px;
   }
 
   .hero__header {
@@ -887,9 +888,15 @@ li, a, button, .navbar__brand-text {
   columns: 2;
 }
 
+.footer__links-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .footer__link {
   transition: all 0.1s ease;
-  display: block;
+  display: inline-block;
 }
 
 .footer__link:not(:last-of-type) {
@@ -939,6 +946,16 @@ li, a, button, .navbar__brand-text {
 @media only screen and (max-width: 700px) {
   .footer, .footer__link {
     font-size: 14px;
+  }
+
+  .footer__about-box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footer {
+    padding: 10px 15px;
   }
 }
 
@@ -1111,3 +1128,149 @@ li, a, button, .navbar__brand-text {
     width: 10px;
   }
 }
+/*       */
+/* LOGIN */
+/* ***** */
+
+.login__wrapper {
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  padding: 2% 3%;
+  border: 1px solid #ededed;
+  border-bottom: 0;
+}
+
+.login__wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 4px;
+  background-image: linear-gradient(to right, #68d9b9, #5edac9, #58dbd8, #5adbe5, #62dbf0);
+}
+
+.login__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 10px;
+}
+
+.login__img {
+  height: 50px;
+}
+
+.login__heading {
+  display: inline-block;
+  color: rgb(160, 160, 160);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.login__box, .password__box {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.login__box {
+  margin-bottom: 20px;
+}
+
+.login__icon-box, .password__icon-box {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.login__icon, .password__icon {
+  color: #e3e3e3;
+  font-size: 16px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.login__input, .password__input {
+  border: 0;
+  padding: 10px 15px;
+  border: 1px solid #f3f3f3;
+  border-left: 0;
+  width: 100%;
+  outline: none;
+}
+
+.login__input:focus + .login__placeholder, .password__input:focus + .password__placeholder {
+  top: 100%;
+  font-size: 12px;
+  display: block;
+  opacity: 1;
+}
+
+.password__box {
+  margin-bottom: 30px;
+}
+
+.login__button {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  padding: 12px 15px;
+  background-color: #68d9b9;
+  border-radius: 3px;
+  border: 0;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.login__button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #68d9b9;
+  border: 1px solid #68d9b9;
+}
+
+.password__placeholder, .login__placeholder {
+  position: absolute;
+  top: 26%;
+  left: 19%;
+  font-size: 14px;
+  z-index: -10;
+  color: lightgrey;
+  opacity: 0;
+  transition: .6s;
+}
+
+.login__text {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.login__link {
+  font-size: 13px;
+  color: #68d9b9;
+  transition: .4s;
+}
+
+.login__link {
+  font-size: 13px;
+}
+
+.login__link:hover {
+  color: #3ec29d;
+}
+
+.password__input:focus::-webkit-input-placeholder, .login__input:focus::-webkit-input-placeholder { color:transparent; }
+.password__input:focus:-moz-placeholder, .login__input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+.password__input:focus::-moz-placeholder, .login__input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+.password__input:focus:-ms-input-placeholder, .login__input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */

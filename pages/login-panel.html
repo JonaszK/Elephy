@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+  <title>Elephy - kursy online dla każdego</title>
+
+  <link rel="icon" href="../img/logo.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/65d40bc64e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <div class="overflow">
+    <nav class="navbar" id="nav">
+      <div class="navbar__brand">
+        <div class="navbar__brand-image-box">
+          <img src="img/logo.png" alt="" class="navbar__brand-image">
+        </div>
+        <div class="navbar__brand-text">
+          Elephy
+        </div>
+      </div>
+
+      <div class="search-box__wrapper">
+        <input class="search-box__input" type="text" placeholder="Wyszukaj..">
+        <button class="search-box__button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <!-- <div class="nav__links">
+
+        <div class="projects">
+          <a class="projects__dropdown" href="">Moje kursy</a>
+          <div class="dropdown"></div>
+        </div> -->
+
+        <div class="nav__right">
+          <div class="projects margin--right-big">
+            <a class="projects__dropdown" href=""><i class="margin--right fas fa-list"></i>Kategorie</a>
+            <div class="dropdown">
+              <ul class="category__list">
+                <a href="" class="category__link">
+                  <li class="category__item"><i class="fas category__icon fa-atom"></i> <div class="category__text">Nauki ścisłe</div></li>
+                </a>
+                <a href="" class="category__link">
+                  <li class="category__item"><i class="far category__icon fa-edit"></i> <div class="category__text">Grafika</div></li>
+                </a>
+                <a href="" class="category__link">
+                  <li class="category__item"><i class="fas category__icon fa-code"></i> <div class="category__text">Programowanie</div></li>
+                </a>
+                <a href="" class="category__link">
+                  <li class="category__item"><i class="fas category__icon fa-comments-dollar"></i> <div class="category__text">Marketing</div></li>
+                </a>
+                <a href="" class="category__link">
+                  <li class="category__item"><i class="fas category__icon fa-poll"></i> <div class="category__text">Biznes</div></li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <a href="#">
+            <div class="nav__basket-box margin--right-big">
+              <i class="fas fa-shopping-basket nav__basket"></i>
+            </div>
+          </a>
+        </div>
+
+
+      <div class="nav-mobile">
+        <!-- second navbar for mobile users -->
+        <div class="user__box">
+          <div class="user__img-box">
+            <img src="img/user.jpg" alt="" class="user__img">
+          </div>
+          <div class="user__content-box">
+            <div class="user__info">
+              <p class="user__name">Użytkownik</p>
+              <p class="user__surname">niezalogowany</p>
+            </div>
+            <div class="user__lvl-content-box">
+              <div class="user__lvl-info">Poziom 0</div>
+              <div class="user__lvl-box">
+                <div class="user__lvl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile__burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+
+    </nav>
+
+    <div id="navbarStick"></div>
+
+  <div class="login__wrapper">
+    <div class="login__header">
+      <h1 class="login__heading">Witaj, załóż swoje konto lub zaloguj się na istniejące</h1>
+    </div>
+    <div class="login__box">
+      <span class="login__icon-box">
+        <i class="fas fa-user login__icon"></i>
+      </span>
+      <input class="login__input" type="text" name="" placeholder="Login" value="">
+      <span class="login__placeholder">Login</span>
+    </div>
+    <div class="password__box">
+      <span class="password__icon-box">
+        <i class="fas fa-key password__icon"></i>
+      </span>
+      <input class="password__input" type="password" name="" placeholder="Hasło" value="">
+      <span class="password__placeholder">Hasło</span>
+    </div>
+    <button class="login__button" type="button" name="button">Zaloguj się</button>
+    <div class="login__text">
+      <div class="login__pass">
+        <a class="login__link" href="#">Zapomniałeś hasła?</a>
+      </div>
+      <div class="login__signup">
+        <a class="login__link" href="#">Nie masz konta?</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/navMobile.js"></script>
+</body>
+
+</html>
