@@ -948,6 +948,10 @@ li, a, button, .navbar__brand-text {
     font-size: 14px;
   }
 
+  .footer {
+    width: 100%;
+  }
+
   .footer__about-box {
     display: none;
   }
@@ -1136,12 +1140,13 @@ li, a, button, .navbar__brand-text {
   margin: 0 auto;
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   width: 25%;
   padding: 2% 3%;
   border: 1px solid #ededed;
   border-bottom: 0;
+  background-color: #fff;
 }
 
 .login__wrapper::after {
@@ -1220,6 +1225,10 @@ li, a, button, .navbar__brand-text {
   margin-bottom: 30px;
 }
 
+.login__input:focus + .login__icon-box .login__icon, .password__input:focus + .password__icon-box .password__icon {
+  color: #68d9b9;
+}
+
 .login__button {
   width: 60%;
   margin: 0 auto;
@@ -1245,7 +1254,7 @@ li, a, button, .navbar__brand-text {
   left: 19%;
   font-size: 14px;
   z-index: -10;
-  color: lightgrey;
+  color: #68d9b9;
   opacity: 0;
   transition: .6s;
 }
@@ -1268,6 +1277,58 @@ li, a, button, .navbar__brand-text {
 
 .login__link:hover {
   color: #3ec29d;
+}
+
+.footer__login {
+  position: absolute;
+  bottom: 0%;
+  padding: 3% 5%;
+  background-color: #fdfdfd;
+  border-top: 1px solid #ededed;
+}
+
+.footer__content-login {
+  margin-top: 0;
+}
+
+.signup__text {
+  text-align: center;
+  margin-top: 15px;
+}
+@media only screen and (max-width: 1500px) {
+  .login__wrapper {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .login__wrapper {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .login__wrapper {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .login__wrapper {
+    width: 65%;
+    top: 30%;
+  }
+
+  .login__text {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .login__wrapper {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .login__wrapper {
+    width: 90%;
+  }
 }
 
 .password__input:focus::-webkit-input-placeholder, .login__input:focus::-webkit-input-placeholder { color:transparent; }
