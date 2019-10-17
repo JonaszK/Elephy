@@ -136,7 +136,7 @@ li, a, button, .navbar__brand-text {
 }
 
 .nav-mobile {
-  position: absolute;
+  position: fixed;
   right: 0;
   height: 100vh;
   top: 48px;
@@ -332,10 +332,6 @@ li, a, button, .navbar__brand-text {
 }
 
 @media only screen and (max-width: 1100px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .nav__right {
     display: none;
   }
@@ -1165,6 +1161,10 @@ li, a, button, .navbar__brand-text {
 
 .body--filter {
   filter: blur(1px);
+}
+
+.overflow {
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 1300px) {
