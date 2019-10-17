@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+html {
+ min-height: 100vh;
+}
+
 body {
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -375,6 +379,7 @@ li, a, button, .navbar__brand-text {
 
 .nav-mobile__active {
   transform: translateX(0%) !important;
+  box-shadow: -3px 5px 7px rgba(0, 0, 0, 0.2);;
 }
 
 /* navbar mobile content styles */
@@ -386,8 +391,27 @@ li, a, button, .navbar__brand-text {
   display: flex;
   width: 100%;
   align-items: center;
-  background-color:  #f7f7f7;
+  background-color:  #fff /*   #f7f7f7; */
   padding: 2% 3%;
+  overflow: hidden;
+  position: relative;
+}
+
+.user__box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #f7f7f7;
+  z-index: -1;
+  transition: 0.8s;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.user__box-active::before {
+  height: 180%;
 }
 
 .user__img-box {
@@ -1325,6 +1349,10 @@ li, a, button, .navbar__brand-text {
   margin-top: 0;
 }
 
+.footer__login-img--box {
+  text-align: center;
+}
+
 .signup__text {
   text-align: center;
   margin-top: 15px;
@@ -1332,13 +1360,12 @@ li, a, button, .navbar__brand-text {
 
 .footer__login {
   width: 100%;
+  margin-top: auto;
 }
 
 .footer__login .footer__about-box {
   display: none;
 }
-
-.footer__login
 
 .footer__content-login .footer__links {
   display: flex;
@@ -1346,6 +1373,7 @@ li, a, button, .navbar__brand-text {
   width: 100%;
   justify-content: space-around;
 }
+
 
 @media only screen and (max-width: 1500px) {
   .login__wrapper {
@@ -1362,12 +1390,12 @@ li, a, button, .navbar__brand-text {
   .login__wrapper {
     width: 40%;
   }
-}
-@media only screen and (max-width: 900px) {
-  .login__wrapper {
-    width: 50%;
+
+  .footer__login-img {
+    width: 500px;
   }
 }
+
 @media only screen and (max-width: 900px) {
   .login__wrapper {
     width: 65%;
@@ -1377,10 +1405,17 @@ li, a, button, .navbar__brand-text {
   .login__text {
     margin-bottom: 20px;
   }
+
+  .footer__login-img {
+    width: 450px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .login__wrapper {
     width: 80%;
+  }
+  .footer__login-img {
+    width: 400px;
   }
 }
 @media only screen and (max-width: 450px) {
