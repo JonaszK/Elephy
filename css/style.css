@@ -75,7 +75,7 @@ li, a, button, .navbar__brand-text {
 }
 
 .navbar__brand-text {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .navbar__brand {
@@ -85,7 +85,7 @@ li, a, button, .navbar__brand-text {
 }
 
 .navbar__brand-image {
-  width: 45px;
+  width: 50px;
   padding-right: 5px;
 }
 
@@ -700,6 +700,12 @@ li, a, button, .navbar__brand-text {
   .hero {
     height: 350px;
   }
+
+  .hero__text-box {
+    left: 5%;
+    top: 15%;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -708,11 +714,11 @@ li, a, button, .navbar__brand-text {
   }
 
   .hero__header {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .hero__text {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -947,22 +953,12 @@ li, a, button, .navbar__brand-text {
 }
 
 @media only screen and (max-width: 550px) {
-  /* .section-courses__heading {
-    font-size: 25px;
+  .section-courses__heading {
+    font-size: 30px;
+    margin: 20px 0;
     border-left: 5px solid #68d9b9;
   }
 
-  .course-card__title {
-    font-size: 16px;
-  }
-
-  .course-card__author {
-    font-size: 14px;
-  }
-
-  .course-card__price-stars {
-    font-size: 14px;
-  } */
   .course-card {
     display: flex;
     justify-content: space-between;
