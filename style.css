@@ -892,6 +892,10 @@ li, a, button, .navbar__brand-text {
   .col-1-5:last-of-type {
     border-bottom: 0;
   }
+  .course-card__image-box {
+    display: flex;
+    align-items: center;
+  }
   .course-card:hover {
     transform: translate(0, 0);
     background-color: #fff;
