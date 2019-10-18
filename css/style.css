@@ -1527,7 +1527,7 @@ li, a, button, .navbar__brand-text {
   }
 
   .footer__login-img {
-    width: 450px;
+    width: 400px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -1535,12 +1535,15 @@ li, a, button, .navbar__brand-text {
     width: 80%;
   }
   .footer__login-img {
-    width: 400px;
+    width: 350px;
   }
 }
 @media only screen and (max-width: 450px) {
   .login__wrapper {
     width: 90%;
+  }
+  .footer__login-img {
+    width: 300px;
   }
 }
 
