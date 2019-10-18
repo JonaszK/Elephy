@@ -860,8 +860,8 @@ li, a, button, .navbar__brand-text {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .section-courses__heading {
+@media only screen and (max-width: 550px) {
+  /* .section-courses__heading {
     font-size: 25px;
     border-left: 5px solid #68d9b9;
   }
@@ -876,10 +876,32 @@ li, a, button, .navbar__brand-text {
 
   .course-card__price-stars {
     font-size: 14px;
+  } */
+  .course-card {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding-bottom: 20px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .col-1-5 {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .col-1-5:last-of-type {
+    border-bottom: 0;
+  }
+  .course-card:hover {
+    transform: translate(0, 0);
+    background-color: #fff;
+    box-shadow: none;
+  }
+  .course-card__image {
+    border-radius: 2px;
   }
 }
 
-@media only screen and (max-width: 450px) {
+/* @media only screen and (max-width: 450px) {
   .course-card__title {
     font-size: 14px;
   }
@@ -891,7 +913,7 @@ li, a, button, .navbar__brand-text {
   .course-card__price-stars {
     font-size: 12px;
   }
-}
+} */
 
 /**********/
 /* FOOTER */
@@ -1121,16 +1143,16 @@ li, a, button, .navbar__brand-text {
 
 @media only screen and (max-width: 560px) {
   .row-courses {
-    grid-template-columns: repeat(2, 190px);
+    grid-template-columns: repeat(1, 100%);
   }
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .row-courses {
     grid-gap: 10px;
     grid-template-columns: repeat(2, 150px);
   }
-}
+} */
 
 .btn {
   text-decoration: none;
