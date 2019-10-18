@@ -703,7 +703,7 @@ li, a, button, .navbar__brand-text {
 
   .hero__text-box {
     left: 5%;
-    top: 15%;
+    top: 25%;
   }
 
 }
@@ -1388,6 +1388,8 @@ li, a, button, .navbar__brand-text {
   border-left: 0;
   width: 100%;
   outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 .login__input:focus + .login__placeholder, .password__input:focus + .password__placeholder {
