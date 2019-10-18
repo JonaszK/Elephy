@@ -1390,6 +1390,7 @@ li, a, button, .navbar__brand-text {
   outline: none;
   border-radius: 0;
   -webkit-appearance: none;
+  -webkit-border-radius:0px;
 }
 
 .login__input:focus + .login__placeholder, .password__input:focus + .password__placeholder {
