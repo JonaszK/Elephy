@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <title>Elephy - kursy online dla każdego</title>
+
+    <link rel="icon" href="img/logo.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/65d40bc64e.js"></script>
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+
+      <nav class="navbar" id="nav">
+        <a href="../index.html">
+          <div class="navbar__brand">
+            <div class="navbar__brand-image-box">
+              <img src="../img/logo.png" alt="" class="navbar__brand-image">
+            </div>
+            <div class="navbar__brand-text">
+              Elephy
+            </div>
+          </div>
+        </a>
+
+        <div class="search-box__wrapper">
+          <input class="search-box__input" type="text" placeholder="Wyszukaj..">
+          <button class="search-box__button"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- <div class="nav__links">
+
+          <div class="projects">
+            <a class="projects__dropdown" href="">Moje kursy</a>
+            <div class="dropdown"></div>
+          </div> -->
+
+          <div class="nav__right">
+            <div class="projects margin--right-big">
+              <a class="projects__dropdown" href=""><i class="margin--right fas fa-list"></i>Kategorie</a>
+              <div class="dropdown">
+                <ul class="category__list">
+                  <a href="" class="category__link">
+                    <li class="category__item"><i class="fas category__icon fa-atom"></i> <div class="category__text">Nauki ścisłe</div></li>
+                  </a>
+                  <a href="" class="category__link">
+                    <li class="category__item"><i class="far category__icon fa-edit"></i> <div class="category__text">Grafika</div></li>
+                  </a>
+                  <a href="" class="category__link">
+                    <li class="category__item"><i class="fas category__icon fa-code"></i> <div class="category__text">Programowanie</div></li>
+                  </a>
+                  <a href="" class="category__link">
+                    <li class="category__item"><i class="fas category__icon fa-comments-dollar"></i> <div class="category__text">Marketing</div></li>
+                  </a>
+                  <a href="" class="category__link">
+                    <li class="category__item"><i class="fas category__icon fa-poll"></i> <div class="category__text">Biznes</div></li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+
+            <a href="#">
+              <div class="nav__basket-box margin--right-big">
+                <i class="fas fa-shopping-basket nav__basket"></i>
+              </div>
+            </a>
+
+            <div class="projects">
+              <a class="btn btn__login" href="pages/login-panel.html">Zarejestruj się</a>
+            </div>
+          </div>
+
+
+
+        <div class="nav-mobile__burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+      </nav>
+      <div class="overflow">
+      <div class="nav-mobile">
+        <!-- second navbar for mobile users -->
+        <div class="user__box">
+          <div class="user__img-box">
+            <img src="img/user.jpg" alt="" class="user__img">
+          </div>
+          <div class="user__content-box">
+            <div class="user__info">
+              <p class="user__name">Użytkownik</p>
+              <p class="user__surname">niezalogowany</p>
+            </div>
+            <div class="user__lvl-content-box">
+              <div class="user__lvl-info">Poziom 0</div>
+              <div class="user__lvl-box">
+                <div class="user__lvl"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <a class="user__box-login" href="pages/login-panel.html">Zaloguj się</a> -->
+        </div>
+        <ul class="category__list category__list--mobile">
+          <a href="" class="category__link category__link--mobile">
+            <li class="category__item category__item--mobile"><i class="fas category__icon category__icon--mobile fa-atom"></i> <span class="category__text category__text--mobile">Nauki ścisłe</span></li>
+          </a>
+          <a href="" class="category__link category__link--mobile">
+            <li class="category__item category__item--mobile"><i class="far category__icon category__icon--mobile fa-edit"></i> <span class="category__text category__text--mobile">Grafika</span></li>
+          </a>
+          <a href="" class="category__link category__link--mobile">
+            <li class="category__item category__item--mobile"><i class="fas category__icon category__icon--mobile fa-code"></i> <span class="category__text category__text--mobile">Programowanie</span></li>
+          </a>
+          <a href="" class="category__link category__link--mobile">
+            <li class="category__item category__item--mobile"><i class="fas category__icon category__icon--mobile fa-comments-dollar"></i> <span class="category__text category__text--mobile">Marketing</span></li>
+          </a>
+          <a href="" class="category__link category__link--mobile">
+            <li class="category__item category__item--mobile"><i class="fas category__icon category__icon--mobile fa-poll"></i> <span class="category__text category__text--mobile">Biznes</span></li>
+          </a>
+        </ul>
+        <div class="nav-mobile__basket-box">
+          <i class="fas fa-shopping-basket nav__basket--mobile"></i>
+          <span class="nav-mobile__basket-text">
+            Twój koszyk
+          </span>
+        </div>
+        <div class="login-box--mobile">
+          <a href="" class="login--link">Zaloguj się</a>
+        </div>
+
+      </div>
+      <div id="navbarStick"></div>
+
+    <div id="body--filter">
+      <section class="section-basket">
+        <div class="basket__flex">
+          <div class="basket__content">
+            <!-- if(w koszyku coś jest) -->
+            <h2 class="basket__content-heading">
+              Produkty w Twoim koszyku
+            </h2>
+            <div class="row-courses basket-row-courses">
+              <div class="col-1-5">
+                <a href="pages/course.html">
+                  <div class="basket-card">
+                    <div class="basket-card__image-box">
+                      <img class="course-card__image basket-card__image" src="../img/course1.jpg" alt="">
+                    </div>
+                    <div class="course-card__content-box">
+                      <h3 class="course-card__title">
+                        WebDevelopment od zera
+                      </h3>
+                      <p class="course-card__author">
+                        Arkadiusz Derny
+                      </p>
+                      <div class="course-card__price-stars">
+                        <div class="course-card__stars-box">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="course-card__price">
+                          39,99zł
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-1-5">
+                <a href="pages/course.html">
+                  <div class="basket-card">
+                    <div class="basket-card__image-box">
+                      <img class="course-card__image basket-card__image" src="../img/course1.jpg" alt="">
+                    </div>
+                    <div class="course-card__content-box">
+                      <h3 class="course-card__title">
+                        WebDevelopment od zera
+                      </h3>
+                      <p class="course-card__author">
+                        Arkadiusz Derny
+                      </p>
+                      <div class="course-card__price-stars">
+                        <div class="course-card__stars-box">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="course-card__price">
+                          39,99zł
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-1-5">
+                <a href="pages/course.html">
+                  <div class="basket-card">
+                    <div class="basket-card__image-box">
+                      <img class="course-card__image basket-card__image" src="../img/course1.jpg" alt="">
+                    </div>
+                    <div class="course-card__content-box">
+                      <h3 class="course-card__title">
+                        WebDevelopment od zera
+                      </h3>
+                      <p class="course-card__author">
+                        Arkadiusz Derny
+                      </p>
+                      <div class="course-card__price-stars">
+                        <div class="course-card__stars-box">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="course-card__price">
+                          39,99zł
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-1-5">
+                <a href="pages/course.html">
+                  <div class="basket-card">
+                    <div class="basket-card__image-box">
+                      <img class="course-card__image basket-card__image" src="../img/course1.jpg" alt="">
+                    </div>
+                    <div class="course-card__content-box">
+                      <h3 class="course-card__title">
+                        WebDevelopment od zera
+                      </h3>
+                      <p class="course-card__author">
+                        Arkadiusz Derny
+                      </p>
+                      <div class="course-card__price-stars">
+                        <div class="course-card__stars-box">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="course-card__price">
+                          39,99zł
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- nie ma? jeden h1 z informacją BRAK -->
+          </div>
+          <div class="basket__price">
+            <h2 class="basket__price-heading"><i class="fas fa-shopping-cart"></i> Twoje zamówienie</h2>
+            <div class="basket__price-box">
+              <div class="basket__price-course-box">
+                <p class="basket__price-course-info">
+                  WebDevelopment od zera, ju...
+                </p>
+                <p class="basket__price-course-price">
+                  <!-- COURSE PRICE -->
+                  39,99zł
+                </p>
+              </div>
+              <div class="basket__price-course-box">
+                <p class="basket__price-course-info">
+                  WebDevelopment, ju...
+                </p>
+                <p class="basket__price-course-price">
+                  <!-- COURSE PRICE -->
+                  39,99zł
+                </p>
+              </div>
+              <div class="basket__price-course-box">
+                <p class="basket__price-course-info">
+                  WebDevelopment od zera, ju...
+                </p>
+                <p class="basket__price-course-price">
+                  <!-- COURSE PRICE -->
+                  39,99zł
+                </p>
+              </div>
+              <div class="basket__price-course-box">
+                <p class="basket__price-course-info">
+                  WebDevelopment od zera, ju...
+                </p>
+                <p class="basket__price-course-price">
+                  <!-- COURSE PRICE -->
+                  39,99zł
+                </p>
+              </div>
+            </div>
+            <div class="basket__price-container">
+              <div class="basket__price-flex">
+                <div class="basket__price-discount-box">
+                  <input class="basket__price-discount-input" placeholder="Kod rabatowy" type="text" name="" value="">
+                  <button class="basket__price-discount-icon-box">
+                    <i class="fas fa-dollar-sign basket__price-discount-icon"></i>
+                  </button>
+                </div>
+                <p class="basket__price-sum">
+                  159,96zł
+                </p>
+              </div>
+
+              <div class="basket__price-discount-sum">
+                <p class="basket__price-discount-info">
+                  - 20zł
+                </p>
+                <p class="basket__price-discount-sum-2">
+                  Suma: 139,96zł
+                </p>
+                <p class="discount-info">
+                  Uzyłeś kodu rabatowego o wartości 20zł
+                </p>
+              </div>
+              <div class="basket__payment-box">
+                <a href="#" class="basket__payment-link">Przejdź do płatności <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__logo-box">
+          <img src="../img/logo-footer.png" alt="" class="footer__logo">
+        </div>
+        <div class="footer__content">
+          <div class="footer__links">
+            <div class="footer__links-box">
+              <a href="" class="footer__link">O nas</a>
+              <a href="" class="footer__link">Pomoc i informacje</a>
+              <a href="" class="footer__link">Jak zostać instruktorem</a>
+              <a href="" class="footer__link">Polityka prywatności</a>
+              <a href="" class="footer__link">Warunki użytkowania</a>
+
+            </div>
+            <div class="footer__links-box">
+              <a href="" class="footer__link">O nas</a>
+              <a href="" class="footer__link">Pomoc i informacje</a>
+              <a href="" class="footer__link">Jak zostać instruktorem</a>
+              <a href="" class="footer__link">Polityka prywatności</a>
+              <a href="" class="footer__link">Warunki użytkowania</a>
+            </div>
+          </div>
+          <div class="footer__about-box">
+            <p class="footer__about">
+              <span class="footer__about-link">Elephy</span> jest stroną stworzoną z myślą o prostym i ogólnodostępnym zdobywaniu wiedzy. Kursy, które u nas się pojawiają są weryfikowane przez nasz zespół,
+              aby dostarczyć Ci materiały o wysokiej jakości. Są one dostępne z każdego miejsca i przez cały czas, więc nie musisz się martwić zakupieniem kursu w momencie urlopu,
+              przerwy. Staramy się utrzymać naszą stronę intuicyjną i przyjemną w użytkowaniu. Masz jakieś propozycje? - napisz do nas <span class="footer__about-link">kursy@elephy.pl</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    </div>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/navMobile.js"></script>
+    <script type="text/javascript" src="../js/functionsOnClick.js"></script>
+    <script type="text/javascript" src="../js/courseMenu.js"></script>
+  </body>
+</html>
